@@ -1,4 +1,6 @@
-name: hanami-view
+name:
+  gem: hanami-view
+  constant: Hanami::View
 github_org: hanakai-rb
 gemspec:
   authors: ["Tim Riley", "Piotr Solnica"]
