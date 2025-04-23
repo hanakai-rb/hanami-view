@@ -1,9 +1,15 @@
 # frozen_string_literal: true
 
-# this file is managed by dry-rb/devtools
+# This file is synced from hanakai-rb/repo-sync
 
 if ENV["COVERAGE"] == "true"
-  require "codacy-coverage"
+  require "simplecov"
+  require "simplecov-cobertura"
 
-  Codacy::Reporter.start
+  SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+
+  SimpleCov.start do
+    add_filter "/spec/"
+    enable_coverage :branch
+  end
 end
