@@ -13,8 +13,8 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.version       = Hanami::View::VERSION.dup
 
-  spec.summary = "A complete, standalone view rendering system that gives you everything you need to write well-factored view code"
-  spec.description = spec.summary
+  spec.summary       = "A complete, standalone view rendering system that gives you everything you need to write well-factored view code"
+  spec.description   = spec.summary
   spec.homepage      = "https://dry-rb.org/gems/hanami-view"
   spec.files         = Dir["CHANGELOG.md", "LICENSE", "README.md", "hanami-view.gemspec", "lib/**/*"]
   spec.bindir        = "bin"
@@ -38,5 +38,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
-  end
+  
+end
 
